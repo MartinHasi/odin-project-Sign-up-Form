@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="page">
-        <img src="./images/background.jpg" alt="">
+        <img src="./images/background_2.JPG" alt="">
         <div class="container">
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
             <p>Sign up <em>now</em> to get started.</p>
@@ -18,37 +18,41 @@
                 <div class="section2">
                     <label for="first_name">First Name
                     </label>
-                    <input type="text" name="first_name" id="first_name">
+                    <input type="text" name="first_name" id="first_name" required>
                 </div>
                 <div class="section2">
                     <label for="email">EMAIL
                     </label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <div class="section2">
                     <label for="password">PASSWORD
                     </label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password"  required>
+                    <p id="password_warning">*Password do not match</p>    
+
                 </div>
                 <div class="section2">
                     <label for="last_name">Last Name
                     </label>
-                    <input type="text" name="last_name" id="last_name">
+                    <input type="text" name="last_name" id="last_name"  required>
                 </div>
                 <div class="section2">
                     <label for="phone_number">Phone Number
                     </label>
-                    <input type="number" name="phone_number" id="phone_number">
+                    <input type="number" name="phone_number" id="phone_number"  required>
                 </div>
                 <div class="section2">
                     <label for="password_confirm">CONFIRM PASSWORD
                     </label>
-                    <input type="password" name="password_confirm" id="password_confirm">
+                    <input type="password" name="password_confirm" id="password_confirm"  required>
                 </div>
-            </div>    
-            <button>Create Account</button>
+            </div>
+            <button onclick="controlPassword()">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
